@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <!-- CSS and Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Armata|Cookie" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Shadows+Into+Light+Two" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Armata|Hind|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Righteous|Shrikhand" rel="stylesheet">
+
+    <!-- JS Files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+
+    <!-- Tab Title -->
+    <title>Reverse Words</title>
+  </head>
+  <body>
+    <div class="jumbotron">
+      <div class="container">
+        <div id="rock-salt">
+          <h1 >A Reversal of Fortune</h1><h4>(that like something or)</h4>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2" style="background-color:#265a8d;text-align:center;">
+          <form id="inputForm" class="form-group">
+            <label for="sentence" class="font" style="color:white;text-shadow:0 2px 7px black;letter-spacing:0.25em;">Enter a sentence</label>
+            <input type="text" name="sentence" id="userInput" required>
+            <button type="submit" class="button font">Reverse</button>
+          </form>
+          <span id="trashIcon" class="fa fa-trash" data-toggle="tooltip" data-placement="left" title="Delete your sentence to start fresh"></span>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="font" id="hideResult">
+            <strong><span id="before">I'll take your sentence, </span><span id="after">So, I've taken your sentence -> </span></strong><span id="inputSentence"></span><strong><br><br>and <span id="messageBeforeResults">return</span><span id="messageAfterResults">have now returned</span> the reverse -> </strong><span id="result"><!-- Reverse of userInput inserted here --></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
